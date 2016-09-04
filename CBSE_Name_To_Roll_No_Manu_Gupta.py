@@ -16,7 +16,7 @@ flag = 0
 saved_roll_no = 1234567
 count = 0
 while (flag == 0):
-   r = requests.post("http://resultsarchives.nic.in/cbseresults/cbseresults2014/class12/cbse122014_total.asp", data={'regno': roll_no, 'B1': 'Submit'}, headers=headers)
+   r = requests.post("http://resultsarchives.nic.in/cbseresults/cbseresults2014/class12/cbse122014_total.htm", data={'regno': roll_no, 'B1': 'Submit'}, headers=headers)
    if r.text.find(name) == -1:
        flag = 0
    else:
